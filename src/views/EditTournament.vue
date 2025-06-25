@@ -85,7 +85,7 @@
     // }
     // =======================================================================================================
     const fetchTournamentData = async () =>{
-            const response = await axios.get(`http://localhost:3010/tournaments?id=${use_route.params.id}`);  // GET request with a filter query parameter
+            const response = await axios.get(`https://tournament-manager-json-server-production.up.railway.app/tournaments?id=${use_route.params.id}`);  // GET request with a filter query parameter
                                                                                                               // This will return an array of tournaments that match the filter.
                                                                                                               // Does not identify a single resuorce to update,- just a filter.
             tournament.value = response.data[0]; // Assuming the API returns an array, we take the first element
@@ -93,7 +93,7 @@
     }
     const updateTournament = async () => {
         try{
-            await axios.put(`http://localhost:3010/tournaments/${use_route.params.id}`,{ // PUT request to update the tournament
+            await axios.put(`https://tournament-manager-json-server-production.up.railway.app/tournaments/${use_route.params.id}`,{ // PUT request to update the tournament
                                                                                          // RESTful endpoint for a single resource
                                                                                          // The URL should point to the specific tournament you want to update.
                                                                                          // Access(update/delete) the tournament with id=use_route.params.id

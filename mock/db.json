@@ -1,10 +1,13 @@
 {
   "tournaments": [
     {
+      "id": "1",
       "name": "Official Tournament Store Season 2 2025",
       "date": "21/6/2025",
       "type": "group",
-      "id": "1"
+      "location":"hall-A",
+      "status": "upcoming"
+      
     },
     {
       "id": 2,

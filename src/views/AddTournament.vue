@@ -44,7 +44,7 @@
     const optionType = ['individual', 'team']; // Define the options for the tournament type dropdown.
 
     const addTournament = async () => {
-        await axios.post('http://localhost:3010/tournaments',{
+        await axios.post('https://tournament-manager-json-server-production.up.railway.app/tournaments',{
             name:tournament.value.name,
             date:tournament.value.date,
             type:tournament.value.type

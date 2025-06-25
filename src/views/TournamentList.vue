@@ -47,7 +47,7 @@
                                        // It means that this function will return a Promise, which can be awaited by other code.
                                        // So, when you call getTournaments(), it will return a Promise that resolves when the data is fetched.
                                        // This is useful for handling asynchronous operations like fetching data from an API.
-        const response = await axios.get('http://localhost:3010/tournaments'); // apply get method to get data from the server 
+        const response = await axios.get('https://tournament-manager-json-server-production.up.railway.app/tournaments'); // apply get method to get data from the server 
                                                                                // using "await" inside this function.
                                                                                // await can only be used inside an "async" function.
                                                                                // You're waiting for data from the server, which takes time (because it's a network request).
