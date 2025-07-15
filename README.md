@@ -14,3 +14,23 @@ Project Features (Basic Version):
 4/ View Tournament Details (optional expansion)
 
 5/ (Optional) Add Participants/Teams
+
+=================================================
+
+You now have:
+
+1/ A full Vue project
+
+2/ REST API integration
+
+    VUE FILE             | HTTP   |  METHOD PURPOSE             |   REST API ENDPOINT
+    ----------------------------------------------------------------------------------------------------------
+    TournamentList.vue	 | GET	  |  Get all tournaments	    |   GET http://localhost:3000/tournaments
+    AddTournament.vue	 | POST	  |  Add new tournament	        |   POST http://localhost:3000/tournaments
+    EditTournament.vue	 | PUT	  |  Update existing tournament |	PUT http://localhost:3000/tournaments/1
+    TournamentList.vue	 | DELETE |  Delete a tournament	    |   DELETE http://localhost:3000/tournaments/1
+
+
+3/ CRUD features
+
+4/ Usage of ES6+ syntax (async/await, const/let, arrow functions)

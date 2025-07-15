@@ -7,7 +7,7 @@ import TournamentAdd from '../views/AddTournament.vue'
 
 const routes =[
     {path:'/',component:TournamentList},
-    {path:'/cards',component:TournamentCard},
+    // {path:'/cards',component:TournamentCard},
     {path:'/edit/:id',component:TournamentEdit,props:true}, // props:true allows route params to be passed as props to the component.
                                                           // The :id part is a dynamic segment, which means any value placed there in the URL (e.g. /edit/123) will be captured as a route parameter named id.
                                                           // Pass {id:'123'} as a prop to EditTournament.vue component when navigating to /edit/123.
